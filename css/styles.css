@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url('/img/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0; 
+  height: 100vh; 
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, black, white); /* Gradiente do preto para o branco */
+    padding: 1px;
+    height: 35vh;
+    animation: transitionBackground 5s infinite alternate; /* Animação da transição */
+}
+
+@keyframes transitionBackground {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+.logoJB img {
+  width: 50%;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: 600;
+  color: #186e37;
+  margin: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 300;
+  text-align: right;
+  padding: 5px;
+  background-color: #186e37;
+}
+
+.navbar ul {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.arrow {
+  color: #ffff;
+  font-size: 35px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+.knowledge {
+  font-weight: 700;
+  color: white;
+}
+
+.subscribe {
+  margin-top: 20px;
+}
+
+input {
+  background-color: whitesmoke;
+  color: blueviolet;
+  padding: 10px;
+  font-weight: 500;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  background-color: darkorchid;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
